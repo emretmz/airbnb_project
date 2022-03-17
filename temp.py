@@ -565,23 +565,6 @@ list(map(lambda x:x,airbnb["new_zip"][0:30]))
 print(len(float_of_all_zipcode))
 print(float_of_all_zipcode.dtype)
 
- 
-"""
-SORU: zipcode'larin sehirmerkezine yakinligi ile fiyat arasindaki corelasyon ve bunla ilgili bir harita yapimi)
-"""
-
-
-"""
-Yillara nazaran degisen fiyat araligi ve enflasyon orani ile arasindaki corelasyon
-kac yillik host ve musteri memnuniyeti arasindaki iliski(Tecrubeli hostlar daha fazla musteri cekebiliyor mu?)
-En cok tercih edilen ve review alan neigborrhoed hangisi(column 6)
-(column 7) Amsterdam harici fiyat dagilimi
-Koordinatlar ile sehir merkezine yakin olan zipcodelarin fiyat dagilimi
-minimum_nights ile price arasindaki iliski(fiyat uygun oldukca minimum_nights artiyor mu?)
-roomtype ile fiyat arasindaki iliski
-property_type ile review_scores_value arasidnaki corelasyon
-"""
-
 """Multiple Linear Regression"""
 import math
 import numpy as np
@@ -881,15 +864,9 @@ print("ttest_ind:            t = %g  p = %g" % (t, p))
 """correlation is not enough to prove relationship between two columns,that's why we need to look probablilty
 correlation doesnt mean coezation"""
 
-"""Uniform(Tekduze) Distribution"""
+"""Uniform Distribution"""
 import matplotlib.pyplot as plt
 s=airbnb['distance']
 count, bins, ignored = plt.hist(s, 100, density=True)
 plt.plot(bins, np.ones_like(bins), linewidth=2, color='r')
 plt.show()
-
-
-
-
-
-
