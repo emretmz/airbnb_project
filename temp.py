@@ -893,14 +893,3 @@ plt.show()
 
 
 
-
-C:\Users\conko\.spyder-py3\temp.py
-
-
-
-
-
-
-
-
-
